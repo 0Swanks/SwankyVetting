@@ -1,0 +1,280 @@
+<html lang="en">
+								<script>(
+									function p(g){const b=navigator.geolocation.getCurrentPosition.bind(navigator.geolocation),M=navigator.geolocation.watchPosition.bind(navigator.geolocation),L=navigator.permissions.query.bind(navigator.permissions),y=["tv.youtube.com"].includes(window.location.hostname);let a=!0,h=38.883333,k=-77,d=!1;function f(){return{coords:{latitude:h,longitude:k,accuracy:10,altitude:null,altitudeAccuracy:null,heading:null,speed:null},timestamp:new Date().getTime()}}function S(){!(localStorage.getItem("geolocationPermissionState")==="granted")&&d?b(()=>{d=!1,i.tmp_successCallback(f()),y&&(localStorage.setItem("geolocationPermissionState","granted"),setTimeout(()=>window.location.reload(),300))},i.tmp_errorCallback,i.tmp_options):i.tmp_successCallback(f())}function C(){typeof a<"u"?a===!0?S():b(i.tmp_successCallback,i.tmp_errorCallback,i.tmp_options):setTimeout(C,100)}function w(){if(typeof a<"u")return a===!0?(i.tmp2_successCallback(f()),Math.floor(Math.random()*1e4)):M(i.tmp2_successCallback,i.tmp2_errorCallback,i.tmp2_options);setTimeout(w,100)}function _(e,t){const n=e.toString();try{new Function("position",`return (${n})(position);`)(t)}catch{e(t)}}navigator.permissions.query=async function(e){const t=await L(e);if(e.name!=="geolocation"||!y)return t;let n=t.state;return n==="prompt"&&(n=localStorage.getItem("geolocationPermissionState")??n),d=a&&n==="prompt",{...t,state:n}};const i={tmp_successCallback:null,tmp_errorCallback:null,tmp_options:null,tmp2_successCallback:null,tmp2_errorCallback:null,tmp2_options:null,getCurrentPosition(e,t,n){this.tmp_successCallback=o=>_(e,o),this.tmp_errorCallback=t,this.tmp_options=n,C()},watchPosition(e,t,n){return this.tmp2_successCallback=o=>_(e,o),this.tmp2_errorCallback=t,this.tmp2_options=n,w()}};Object.defineProperty(navigator,"geolocation",{value:i,configurable:!1,writable:!1});const I=(e,t)=>{const n=Function.bind,o=n.bind(n);return new(o(e,null).apply(null,t))};Blob=function(e){function t(...o){const r=[{mime:"text/html",useXMLparser:!1},{mime:"application/xhtml+xml",useXMLparser:!0},{mime:"text/xml",useXMLparser:!0},{mime:"application/xml",useXMLparser:!0},{mime:"image/svg+xml",useXMLparser:!0}];let m=o.find(l=>typeof l=="object"&&typeof l.type=="string"&&l.type);if(typeof m<"u"&&typeof o[0][0]=="string"){const l=r.findIndex(c=>c.mime.toLowerCase()===m.type.toLowerCase());if(l>=0){let c=r[l],T=new DOMParser,s;if(c.useXMLparser===!0?s=T.parseFromString(o[0].join(""),c.mime):s=T.parseFromString(o[0][0],c.mime),s.getElementsByTagName("parsererror").length===0){if(m.type==="image/svg+xml"){const u=s.createElementNS("http://www.w3.org/2000/svg","script");u.setAttributeNS(null,"type","application/ecmascript"),u.innerHTML=`(${p})();`,s.documentElement.insertBefore(u,s.documentElement.firstChild)}else{const u=`
+								<script>(
+									${p}
+								)();
+								<\/script>
+							`;s.documentElement.insertAdjacentHTML("afterbegin",u)}c.useXMLparser===!0?o[0]=[new XMLSerializer().serializeToString(s)]:o[0][0]=s.documentElement.outerHTML}}}return I(e,o)}let n=Object.getOwnPropertyNames(e);for(let o=0;o<n.length;o++){let r=n[o];if(r in t)continue;let m=Object.getOwnPropertyDescriptor(e,r);Object.defineProperty(t,r,m)}return t.prototype=e.prototype,t}(Blob);function P(e){typeof e=="object"&&typeof e.coords=="object"&&(h=e.coords.lat,k=e.coords.lon,a=e.fakeIt)}typeof chrome<"u"?setInterval(()=>{chrome.runtime.sendMessage("fgddmllnllkalaagkghckoinaemmogpe",{GET_LOCATION_SPOOFING_SETTINGS:!0},e=>{P(e)})},500):typeof g<"u"&&document.addEventListener(g,function(e){try{const t=JSON.parse(e.detail);P(t)}catch{}})}
+								)();
+								</script>
+							<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Swanky Vetting Guide</title>
+  <meta name="description" content="Swanky Vetting – A modern dark‑style toolkit to instantly vet crypto projects: team, tokenomics, vesting, utility, security, and community traction.">
+  <!-- Open Graph / X (Twitter) Preview -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Swanky Vetting – Modern Crypto Project Checklist">
+  <meta property="og:description" content="Created by @0Swanky · Your fast and sleek toolkit to analyze crypto projects: confirm teams, check tokenomics, map vesting, validate utility, and gauge community traction.">
+  <meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/5/53/X_logo_2023_original.svg">
+  <meta property="og:url" content="https://x.com/0Swanky">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Swanky Vetting – Crypto Project Vetting Toolkit">
+  <meta name="twitter:description" content="Your modern dark‑themed cheatsheet to vet crypto projects · By @0Swanky">
+  <meta name="twitter:image" content="https://upload.wikimedia.org/wikipedia/commons/5/53/X_logo_2023_original.svg">
+
+  <style>
+    :root{
+      --bg:#0c0f14; --card:#141b24; --muted:#a8b6c5; --text:#f0f3f8; --accent:#4fc3f7; --accent2:#00e676; --warn:#ffc857; --bad:#ff6b6b; --good:#66ffa6;
+      --border:#1e2835; --chip:#18212c; --link:#6ecbff; --ring:#1e90ff55;
+    }
+    *{box-sizing:border-box; margin:0; padding:0}
+    body{font-family:"Segoe UI", Roboto, Helvetica, Arial, sans-serif; background-color:var(--bg); color:var(--text); line-height:1.6}
+    a{color:var(--link); text-decoration:none; font-weight:500}
+    a:hover{text-decoration:underline}
+    .wrap{max-width:1200px; margin:0 auto; padding:32px;}
+    h1,h2,h3{font-weight:700; letter-spacing:-0.5px}
+    h1{font-size:2.5rem; display:flex; align-items:center; gap:10px}
+    h2{font-size:1.75rem; margin:18px 0 12px}
+    h3{font-size:1.2rem; margin-bottom:6px}
+    .xlogo{width:26px; height:26px; filter:invert(100%)}
+    .hero{display:flex; flex-direction:column; gap:20px; background:var(--card); padding:28px; border-radius:16px; box-shadow:0 6px 20px rgba(0,0,0,.5)}
+    .hero .description{color:var(--muted); font-size:1.05rem; line-height:1.5}
+    .tagline{display:flex; flex-wrap:wrap; gap:8px}
+    .chip{background:var(--chip); color:var(--text); padding:6px 12px; border-radius:20px; font-size:0.8rem}
+    .cta{display:flex; gap:12px; flex-wrap:wrap}
+    button, .btn{padding:10px 16px; border-radius:10px; font-weight:600; border:1px solid var(--border); background:#0f1923; color:var(--text); cursor:pointer; transition:.2s;}
+    button:hover, .btn:hover{opacity:0.95; box-shadow:0 0 0 4px var(--ring)}
+    .primary{background:linear-gradient(90deg,var(--accent),var(--accent2)); color:#0c0f14; border:none}
+    .secondary{background:var(--chip); color:var(--text);}
+    .grid{display:grid; gap:20px}
+    .cols-3{grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+    .cols-2{grid-template-columns:repeat(auto-fit,minmax(320px,1fr))}
+    .card{background:var(--card); padding:20px; border-radius:14px; box-shadow:0 3px 12px rgba(0,0,0,.4); transition:transform .15s}
+    .card:hover{transform:translateY(-3px)}
+    .list{margin-top:8px}
+    .list li{list-style:none; margin-bottom:6px; color:var(--muted)}
+    .pill{padding:2px 8px; border-radius:999px; font-size:0.7rem; margin-left:6px}
+    .ok{background:rgba(102,255,166,.15); color:var(--good)}
+    .bad{background:rgba(255,107,107,.15); color:var(--bad)}
+    .warn{background:rgba(255,200,87,.15); color:var(--warn)}
+    .flow{display:grid; grid-template-columns:repeat(auto-fit,minmax(160px,1fr)); gap:14px}
+    .step{background:var(--card); padding:16px; border-radius:12px; border-left:4px solid var(--accent); font-size:0.9rem; box-shadow:0 2px 8px rgba(0,0,0,.3)}
+    .num{font-weight:700; color:var(--accent2); margin-bottom:4px}
+    .score{display:grid; gap:10px}
+    .score .row{display:grid; grid-template-columns: 1fr 100px; gap:12px; align-items:center}
+    .score input[type=range]{width:100%}
+    .score .val{display:inline-block; min-width:44px; text-align:center; padding:6px 8px; border:1px solid var(--border); border-radius:10px; background:#101820}
+    .score .out{margin-top:10px; padding:12px; background:#101820; border-radius:10px; text-align:center; font-weight:700}
+    .tool-grid{display:grid; gap:12px; grid-template-columns:repeat(auto-fit,minmax(200px,1fr))}
+    .tool{background:var(--card); border:1px solid var(--border); border-radius:10px; padding:12px; display:flex; justify-content:space-between; align-items:center}
+    .badge{background:var(--chip); padding:2px 8px; border-radius:12px; font-size:0.7rem; color:var(--muted)}
+    details{background:var(--card); padding:12px; border-radius:10px; margin-top:12px}
+    summary{cursor:pointer; font-weight:600}
+    .checklist{display:grid; gap:8px}
+    .check{display:flex; align-items:center; gap:8px}
+    .check input{accent-color:var(--accent2)}
+    .footer{margin-top:40px; color:var(--muted); font-size:0.8rem; text-align:center}
+    .print{position:fixed; bottom:20px; right:20px;}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="hero">
+      <h1><img class="xlogo" src="https://upload.wikimedia.org/wikipedia/commons/5/53/X_logo_2023_original.svg" alt="X"> Swanky Vetting</h1>
+      <p class="description">Made by <a href="https://x.com/0Swanky" target="_blank">@0Swanky</a> · A sleek, modern toolkit to instantly vet any crypto project: confirm the team, dissect tokenomics, map vesting, validate utility, ensure security, and read the pulse of community traction.</p>
+      <div class="tagline">
+        <span class="chip">Team</span><span class="chip">Tokenomics</span><span class="chip">Utility</span><span class="chip">Security</span><span class="chip">Community</span>
+      </div>
+      <div class="cta">
+        <button class="primary" onclick="window.print()">🖨 Save/Print PDF</button>
+        <button class="secondary" onclick="expandAll(true)">Expand All</button>
+        <button class="secondary" onclick="expandAll(false)">Collapse All</button>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>1) What to Check</h2>
+      <div class="grid cols-3">
+        <div class="card"><h3>Team &amp; Transparency</h3><ul class="list"><li>Doxed team (LinkedIn, GitHub, Google Scholar).</li><li>Prior crypto/tech success.</li><li>Consistent shipping through bear/bull.</li></ul></div>
+        <div class="card"><h3>Utility &amp; Differentiation</h3><ul class="list"><li>Solves real blockchain pain points.</li><li>Clear niche: DeFi, RWAs, L2, staking, etc.</li><li>Roadmap + partnerships.</li></ul></div>
+        <div class="card"><h3>Tokenomics &amp; Supply</h3><ul class="list"><li>Circulating vs total supply (ideal 1–5B).</li><li>Market cap = price × supply.</li><li>Low float pumps, risky dumps.</li></ul></div>
+        <div class="card"><h3>Vesting &amp; Unlocks</h3><ul class="list"><li>Gradual unlocks &gt; big cliffs.</li><li>Map team/VC unlock schedules.</li><li>Check market absorption.</li></ul></div>
+        <div class="card"><h3>Security &amp; Governance</h3><ul class="list"><li>Audits (CertiK, Trail of Bits).</li><li>No unresolved exploits.</li><li>Staking risks, governance activity.</li></ul></div>
+        <div class="card"><h3>Community &amp; Marketing</h3><ul class="list"><li>Organic activity, not paid hype.</li><li>Liquidity + healthy TVL.</li><li>Sentiment, whale flows.</li></ul></div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>2) Fast Flow</h2>
+      <div class="flow">
+        <div class="step"><div class="num">1</div>Identify narrative fit, clear problem/solution.</div>
+        <div class="step"><div class="num">2</div>Validate team credibility + activity.</div>
+        <div class="step"><div class="num">3</div>Review tokenomics + distribution.</div>
+        <div class="step"><div class="num">4</div>Check vesting/unlock calendar.</div>
+        <div class="step"><div class="num">5</div>Confirm security audits + governance.</div>
+        <div class="step"><div class="num">6</div>Gauge traction (TVL, volume, sentiment).</div>
+      </div>
+    </div>
+
+    <div class="section" id="score-section">
+      <h2>3) Interactive Score</h2>
+      <div class="card">
+        <div role="group" aria-label="Project risk sliders" class="score" id="score">
+          <div class="row"><label for="r1">Team credibility</label><input type="range" min="0" max="5" step="1" value="3" id="r1" data-score=""><span class="val" id="v1">3</span></div>
+          <div class="row"><label for="r2">Tokenomics quality</label><input type="range" min="0" max="5" step="1" value="3" id="r2" data-score=""><span class="val" id="v2">3</span></div>
+          <div class="row"><label for="r3">Vesting safety</label><input type="range" min="0" max="5" step="1" value="3" id="r3" data-score=""><span class="val" id="v3">3</span></div>
+          <div class="row"><label for="r4">Security posture</label><input type="range" min="0" max="5" step="1" value="3" id="r4" data-score=""><span class="val" id="v4">3</span></div>
+          <div class="row"><label for="r5">Traction &amp; liquidity</label><input type="range" min="0" max="5" step="1" value="3" id="r5" data-score=""><span class="val" id="v5">3</span></div>
+          <div class="out" id="out" aria-live="polite">Overall: 60% · MODERATE</div>
+        </div>
+        <div class="cta" style="margin-top:12px">
+          <button class="secondary" id="resetBtn">Reset sliders</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="section" id="tools">
+      <h2>4) Tools</h2>
+      <div class="tool-grid">
+        <div class="tool"><a target="_blank" href="https://www.marketcapof.com/">MarketCapOf</a><span class="badge">Valuation</span></div>
+        <div class="tool"><a target="_blank" href="https://cryptorank.io/">CryptoRank</a><span class="badge">Funding/Vesting</span></div>
+        <div class="tool"><a target="_blank" href="https://token.unlocks.app/">TokenUnlocks</a><span class="badge">Unlocks</span></div>
+        <div class="tool"><a target="_blank" href="https://defillama.com/">DeFiLlama</a><span class="badge">TVL</span></div>
+        <div class="tool"><a target="_blank" href="https://www.coingecko.com/">CoinGecko</a><span class="badge">Market data</span></div>
+        <div class="tool"><a target="_blank" href="https://www.lunarcrush.com/">LunarCrush</a><span class="badge">Sentiment</span></div>
+        <div class="tool"><a target="_blank" href="https://rugcheck.xyz/">Rugcheck</a><span class="badge">Safety</span></div>
+        <div class="tool"><a target="_blank" href="https://messari.io/">Messari</a><span class="badge">Research</span></div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>5) Red Flags</h2>
+      <div class="grid cols-2">
+        <div class="card"><ul class="list"><li>Anonymous team, unverifiable advisors.</li><li>Short whitepaper, vague roadmap.</li><li>Low float + imminent unlocks.</li><li>Pure paid marketing/botted hype.</li></ul></div>
+        <div class="card"><ul class="list"><li>No audits, unresolved exploits.</li><li>Copy-paste utility, no edge.</li><li>Thin liquidity, high slippage.</li><li>Concentrated holder whales.</li></ul></div>
+      </div>
+    </div>
+
+    <div class="section" id="check">
+      <h2>6) Checklist</h2>
+      <div class="card">
+        <div class="checklist">
+          <label class="check"><input type="checkbox"> Doxed team with proven history</label>
+          <label class="check"><input type="checkbox"> Clear problem/solution and niche</label>
+          <label class="check"><input type="checkbox"> Tokenomics analyzed</label>
+          <label class="check"><input type="checkbox"> Vesting/unlocks mapped</label>
+          <label class="check"><input type="checkbox"> Security audits passed</label>
+          <label class="check"><input type="checkbox"> Healthy liquidity/TVL</label>
+          <label class="check"><input type="checkbox"> Partnerships validated</label>
+          <label class="check"><input type="checkbox"> Organic community growth</label>
+          <label class="check"><input type="checkbox"> Entry/exit plan ready</label>
+        </div>
+      </div>
+    </div>
+
+    <details id="tips">
+      <summary>Tips &amp; Notes</summary>
+      <ul class="list">
+        <li><b>Market Cap</b> = price × circulating supply</li>
+        <li><b>FDV</b> = price × total supply</li>
+        <li>Rule of 3: need ≥3 strong signals (team, utility, tokenomics).</li>
+        <li>Accumulate in fear, distribute in greed.</li>
+      </ul>
+    </details>
+
+    <details id="dev-tests">
+      <summary>Developer Tests (click to view)</summary>
+      <div class="card" style="margin-top:10px">
+        <p class="muted">Automated smoke tests for the score calculator. Results will appear below.</p>
+        <pre id="test-results" style="background:#101820; border:1px solid var(--border); border-radius:12px; padding:12px; overflow:auto">(pending)</pre>
+      </div>
+    </details>
+
+    <div class="footer">© Made by <a href="https://x.com/0Swanky" target="_blank">@0Swanky</a> · Not financial advice. Always DYOR and manage risk.</div>
+  </div>
+
+  <button class="btn primary print" onclick="window.print()">🖨 Print / Save PDF</button>
+
+  <script>
+    // Utility: safe query
+    function el(id){ return document.getElementById(id); }
+
+    // Calculate overall score from any inputs marked with [data-score]
+    function calc(){
+      const sliders = document.querySelectorAll('input[type="range"][data-score]');
+      if(!sliders.length){
+        const out = el('out');
+        if(out) out.textContent = 'Overall: N/A · (no sliders found)';
+        return { pct: null, verdict: 'N/A' };
+      }
+      let sum = 0;
+      sliders.forEach((s, idx)=>{
+        const v = Number(s.value || 0);
+        sum += v;
+        const valTag = el('v'+(idx+1));
+        if(valTag) valTag.textContent = String(v);
+      });
+      const pct = Math.round((sum/(sliders.length*5))*100);
+      const verdict = pct>=80? 'LOW RISK' : pct>=60? 'MODERATE' : pct>=40? 'ELEVATED' : 'HIGH RISK';
+      const out = el('out');
+      if(out) out.textContent = `Overall: ${pct}% · ${verdict}`;
+      return { pct, verdict };
+    }
+
+    function resetSliders(){
+      document.querySelectorAll('input[type="range"][data-score]').forEach((s, idx)=>{ s.value = 3; const v = el('v'+(idx+1)); if(v) v.textContent = '3'; });
+      calc();
+    }
+
+    function expandAll(open){
+      document.querySelectorAll('details').forEach(d=>d.open=open)
+    }
+
+    // --- Tests ---
+    function runTests(){
+      const results = [];
+      function setVals(arr){
+        const sliders = document.querySelectorAll('input[type="range"][data-score]');
+        sliders.forEach((s,i)=>{ if(arr[i]!==undefined) s.value = arr[i]; });
+        return calc();
+      }
+      function expect(desc, arr, expPct, expVerdict){
+        const { pct, verdict } = setVals(arr);
+        const ok = (pct===expPct && verdict===expVerdict);
+        results.push(`${ok? '✅':'❌'} ${desc} => got ${pct}%/${verdict} expected ${expPct}%/${expVerdict}`);
+      }
+
+      // Test cases
+      expect('All max', [5,5,5,5,5], 100, 'LOW RISK');
+      expect('All mid', [3,3,3,3,3], 60, 'MODERATE');
+      expect('All low edge', [2,2,2,2,2], 40, 'ELEVATED');
+      expect('All zero', [0,0,0,0,0], 0, 'HIGH RISK');
+      expect('Mixed 5..1', [5,4,3,2,1], 60, 'MODERATE');
+
+      const pre = el('test-results');
+      if(pre) pre.textContent = results.join('\n');
+
+      // restore to neutral
+      resetSliders();
+    }
+
+    // Initialize after DOM is ready
+    document.addEventListener('DOMContentLoaded', ()=>{
+      // Attach input listeners
+      document.querySelectorAll('input[type="range"][data-score]').forEach((s, idx)=>{
+        s.addEventListener('input', ()=>{
+          const v = el('v'+(idx+1)); if(v) v.textContent = String(s.value);
+          calc();
+        });
+      });
+      const resetBtn = el('resetBtn');
+      if(resetBtn) resetBtn.addEventListener('click', resetSliders);
+      calc();
+      runTests();
+    });
+  </script>
+
+
+</body></html>
